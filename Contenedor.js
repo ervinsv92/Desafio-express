@@ -23,7 +23,9 @@ class Contenedor{
         return id;
     }
 
-    getById = (id)=> this.productos.find(x =>x.id === id);
+    getById(id){
+        return this.productos.find(x =>x.id === id)
+    };
     async getAll(){
         try {
             const data = await fs.promises.readFile(this.path, 'utf-8');
