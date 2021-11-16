@@ -1,0 +1,3 @@
+[{"id":1,"title":"Celular","price":500,"thumbnail":"url celular"},
+{"id":2,"title":"Compuradora","price":1000,"thumbnail":"url computadora"},
+{"id":3,"title":"Pizza","price":20,"thumbnail":"url pizza"}]
