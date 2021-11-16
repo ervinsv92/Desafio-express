@@ -9,6 +9,10 @@ app.listen(PORT, ()=>{
     console.log(`Servidor corriendo en http://localhost: ${PORT}`)
 })
 
+app.get('/', (req, res)=>{
+    res.send(`<h1>Ervin - Servidor Corriendo</h1>`)
+})
+
 app.get('/productos', async (req, res)=>{
     let productos = await contenedor.getAll();
     res.json({productos:productos})
